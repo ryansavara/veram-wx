@@ -15,7 +15,7 @@
     "author": {
         "name": "Ryan"
     },
-    "license": "MIT",
+    "license": "GPLv3",
     "dependencies": {
         "electron-squirrel-startup": "^1.0.0"
     },
