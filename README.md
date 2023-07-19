@@ -12,7 +12,6 @@ Currently uses Iowa State's q2-hsr-900913 tiles.
 1. Move your mouse to the upper right hand corner, and a dropdown of programmed sectors will appear. Select your sector.
 1. Pan/zoom the map to align the sectors with your controller client.
 1. Press `Ctrl+Alt+Y` to make the window always on top and ignore mouse events
-1. You will need to cycle through multiple programs and back to vERAM WX in order to properly set the window on top with transparency.
 1. To make further adjustments, or get control of the window, press `Ctrl+Alt+Y` again.
 
 ## How to Build

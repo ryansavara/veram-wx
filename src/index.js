@@ -34,6 +34,12 @@ app.whenReady().then(() => {
         app.focus();
         BrowserWindow.getFocusedWindow().setIgnoreMouseEvents(ignoring);
         BrowserWindow.getFocusedWindow().setAlwaysOnTop(ignoring);
+        // Force window to lose focus so you don't have to cycle through
+        // applications to get it to properly be on top.
+        if (ignoring) {
+            BrowserWindow.getFocusedWindow().hide();
+        }
+        BrowserWindow.getAllWindows()[0].show();
     });
 });
 
