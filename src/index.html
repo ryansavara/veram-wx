@@ -15,8 +15,7 @@
             .leaflet-container {
                 background-color: rgba(0, 0, 0, 0);
             }
-            .leaflet-control-zoom,
-            .leaflet-bottom {
+            .leaflet-control-zoom {
                 display: none;
             }
             .leaflet-control-layers {
@@ -24,6 +23,13 @@
             }
             .leaflet-control-layers:hover {
                 opacity: unset;
+            }
+            .leaflet-control-attribution {
+                background-color: rgba(0, 0, 0, 0.1) !important;
+            }
+            .leaflet-control-attribution a {
+                color: rgba(25, 25, 25, 0.5);
+                text-decoration: none;
             }
         </style>
     </head>
@@ -59,6 +65,8 @@
                 localStorage.setItem('lon', mymap.getCenter().lng);
                 localStorage.setItem('zoom', mymap.getZoom());
             });
+
+            //#region Sectors
 
             //#region ZAB
             const ZAB = new L.LayerGroup();
@@ -20744,8 +20752,10 @@
             ZTL.addLayer(ZTL50);
             //#endregion
 
+            //#endregion
+
             const tiles = L.tileLayer(
-                'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-n1p-900913/{z}/{x}/{y}.png&ts={ts}',
+                'https://mesonet.agron.iastate.edu/cache/tile.py/1.0.0/q2-hsr-900913/{z}/{x}/{y}.png&ts={ts}',
                 {
                     attribution:
                         '&copy; <a href="https://mesonet.agron.iastate.edu/">Iowa State University</a>',

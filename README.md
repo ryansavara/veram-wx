@@ -2,7 +2,7 @@
 
 This is an [Electron](https://github.com/electron/electron) application that loads NEXRAD weather onto a transparent canvas. The window can be set on top of all other windows and made to not process mouse input, effectively making it an overlay. Originally created for vERAM, however it can be used with VRC, Euroscope, or any radar client. Only USA non-oceanic sectors are preloaded.
 
-Currently uses Iowa State's q2-n1p-900913 tiles.
+Currently uses Iowa State's q2-hsr-900913 tiles.
 
 ## How to Use
 
