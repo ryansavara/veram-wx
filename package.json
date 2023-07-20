@@ -1,7 +1,7 @@
 {
     "name": "vERAM_WX",
-    "productName": "vEARM WX",
-    "version": "1.0.0",
+    "productName": "vERAM WX",
+    "version": "1.0.1",
     "description": "An Electron app to create a transparent weather overlay.",
     "main": "src/index.js",
     "scripts": {
